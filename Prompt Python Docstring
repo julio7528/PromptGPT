@@ -1,0 +1,25 @@
+Function Source:
+    def model_function(self):
+        print(f"Input value: {self.iStantardPath}")
+        self.register_log('Teste')
+        value = "Model function completed successfully"
+        return value
+
+Generate a Python docstring for the function with the following details (Do not Create Empty/Blank Line):
+
+📌 Name: [Function Name]
+🚀 Functionality: [Brief description of what the function does]
+📥 Input Values:
+    - [input_parameter_name] ([input_parameter_type]): [Description of the input value(s), if any]
+📤 Output Values:
+    - [output_parameter_name] ([output_parameter_type]): [Description of the output value(s)]
+📤 Returns:
+    - [Description of the return value(s)]
+🏭 Description of Process:
+    - [Brief description of the function's steps and process]
+
+🚨 Exception Description:
+    [Explanation of possible exceptions that the function can encounter and how they are handled]
+    
+🚨 Exception Return:
+    [Description of the return value(s) in case of encountering exceptions]

@@ -38,6 +38,27 @@ class MyClass:
     #Common
 
     def verifyLogFileExists(self):
+        """
+        📌 Name: verifyLogFileExists
+        🚀 Functionality: Checks if the log file exists and creates it if it doesn't.
+        📥 Input Values:
+            - self (object): An instance of the class containing the 'iStandardPath' and 'iLogFile' attributes.
+        📤 Output Values:
+            None
+        📤 Returns:
+            None
+        🏭 Description of Process:
+            1. Check if the log file exists at the specified path.
+            2. If the log file doesn't exist:
+                Step 1: Create the log file using the 'iStandardPath' and 'iLogFile' attributes.
+                Step 2: Write an initial log entry with the current date and time.
+        🚨 Exception Description:
+            This function may encounter the following exceptions:
+            - OSError: If there's an issue accessing the file system.
+            - IOError: If there's an issue while writing the initial log entry.
+        🚨 Exception Return:
+            If any exception occurs, the function will log the error using the '_log_error' method.
+        """
         try:
             if not os.path.isfile(os.path.join(self.iStandardPath, self.iLogFile)):
                 with open(os.path.join(self.iStandardPath, self.iLogFile), 'w', encoding='utf-16-le') as file:
@@ -46,6 +67,30 @@ class MyClass:
             self._log_error("verifyLogFileExists", e)
 
     def register_log(self, function_name, vMessage):
+        """
+            📌 Name: register_log
+            🚀 Functionality: Logs a message along with a timestamp and function name to a file.
+            📥 Input Values:
+                - function_name (str): The name of the function.
+                - vMessage (str): The message to be logged.
+            📤 Output Values:
+                None
+            📤 Returns:
+                None
+            🏭 Description of Process:
+                This function logs a message along with the current timestamp and the function name to a file.
+                Steps:
+                1. Combine the `self.iStandardPath` and `self.iLogFile` to get the file path.
+                2. Get the current date and time using the `getCurrentDateTime()` method.
+                3. Create a log message with the timestamp, function name, and the provided message.
+                4. Print the log message to the console.
+                5. Open the log file in append mode and write the log message to it.
+            🚨 Exception Description:
+                If an exception occurs during the logging process, it will be caught and handled.
+                - In case of any exception, the `_log_error` method will be called to log the error details.
+            🚨 Exception Return:
+                If an exception is encountered, there is no specific return value.
+        """
         try:
             path_file = os.path.join(self.iStandardPath, self.iLogFile)
             vDateTime = self.getCurrentDateTime()
@@ -66,13 +111,11 @@ class MyClass:
             function_name = inspect.stack()[0][3]
             self.register_log(function_name, "Function executed successfully.")
         except Exception as e:
-            self._log_error("model_process_function", e)
-
-    
+            self._log_error("Error: model_process_function", e)
 
 def main():
     try:
-        #Define Variables Based in Test or Production
+        #Define Input Variables Based in Test or Production
         try:
             if sys.argv[1] != '':
                 iStandardPath = sys.argv[1]

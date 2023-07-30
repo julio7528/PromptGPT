@@ -17,9 +17,7 @@ Generate a Python docstring for the function with the following details (Do not 
     - [Description of the return value(s)]
 🏭 Description of Process:
     - [Brief description of the function's steps and process]
-
 🚨 Exception Description:
-    [Explanation of possible exceptions that the function can encounter and how they are handled]
-    
+    [Explanation of possible exceptions that the function can encounter and how they are handled]    
 🚨 Exception Return:
     [Description of the return value(s) in case of encountering exceptions]

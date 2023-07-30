@@ -1,0 +1,100 @@
+import os
+import inspect
+import traceback
+import sys
+from datetime import datetime
+
+class MyClass:
+    def __init__(self, iStandardPath, iLogFile):
+        self.iStandardPath = iStandardPath
+        self.iLogFile = iLogFile
+
+    #Statics
+    
+    @staticmethod
+    def getCurrentDateTime():
+        now = datetime.now()
+        return now.strftime("%m-%d-%Y %H-%M-%S %p")
+
+    #Private
+    
+    def _extract_line_number(self, traceback_msg):
+        start_index = traceback_msg.find(", line ") + len(", line ")
+        end_index = traceback_msg.find(",", start_index)
+        line_number = traceback_msg[start_index:end_index].strip()
+        return line_number
+
+    def _log_error(self, function_name, exception):
+        traceback_msg = traceback.format_exc()
+        line_number = self._extract_line_number(traceback_msg)
+        error_msg = f"Error in Function {function_name}: {exception} - Line {line_number}"
+        self.register_log(function_name, error_msg)
+
+    #Public
+    
+    def public_extract_line_number(self, traceback_msg):
+        return self._extract_line_number(traceback_msg)
+
+    #Common
+
+    def verifyLogFileExists(self):
+        try:
+            if not os.path.isfile(os.path.join(self.iStandardPath, self.iLogFile)):
+                with open(os.path.join(self.iStandardPath, self.iLogFile), 'w', encoding='utf-16-le') as file:
+                    file.write(f'{self.getCurrentDateTime()} - Log file created\n')
+        except Exception as e:
+            self._log_error("verifyLogFileExists", e)
+
+    def register_log(self, function_name, vMessage):
+        try:
+            path_file = os.path.join(self.iStandardPath, self.iLogFile)
+            vDateTime = self.getCurrentDateTime()
+            message = f"{vDateTime} - {function_name} - {vMessage}\n"
+            print(message)
+            with open(path_file, 'a', encoding='utf-16-le') as file:
+                file.write(message)
+        except Exception as e:
+            self._log_error("register_log", e)
+
+    #Process
+
+    def model_process_function(self):
+        """
+        Example function to demonstrate a function running.
+        """
+        try:
+            function_name = inspect.stack()[0][3]
+            self.register_log(function_name, "Function executed successfully.")
+        except Exception as e:
+            self._log_error("model_process_function", e)
+
+    
+
+def main():
+    try:
+        #Define Variables Based in Test or Production
+        try:
+            if sys.argv[1] != '':
+                iStandardPath = sys.argv[1]
+                iLogFile = sys.argv[2]
+        except Exception as e:
+            iStandardPath = r'C:\Users\julio\OneDrive - ViaFlow\Documents\Internal RPA\Seara\ServiceDesk'
+            iLogFile = r'Log - 7-29-2023 7-03-29 PM.txt'
+        finally:
+            iBaseFile = r'Base.txt'
+
+        #Process Main    
+        function_name = inspect.stack()[0][3]
+        my_instance = MyClass(iStandardPath, iLogFile)
+        my_instance.verifyLogFileExists()
+        my_instance.register_log(function_name, f"Start of Process: {os.path.basename(__file__)}")
+        my_instance.model_process_function()
+    except Exception as e:
+        traceback_msg = traceback.format_exc()
+        line_number = my_instance.public_extract_line_number(traceback_msg)
+        my_instance.register_log(function_name, f"Error: {e} - Line {line_number}")
+    finally:
+        my_instance.register_log(function_name, f"End of Process: {os.path.basename(__file__)}")
+
+if __name__ == "__main__":
+    main()

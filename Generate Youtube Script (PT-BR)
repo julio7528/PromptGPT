@@ -1,0 +1,33 @@
+*****************para gerar o script***************************
+Gostaria de criar um roteiro para um vídeo no YouTube com base na estrutura fornecida abaixo:
+
+Tema: [Defina o tema do seu vídeo: CHAMANDO EXECUCOES DO PYTHON DENTRO DO POWER AUTOMATE POR POWERSHELL]
+
+Introdução:
+[Forneça uma apresentação simples, cordial e objetiva: DÊ SAUDACOES, BEM VINDO AO CANAL DA TECHNAR, SE INSCREVA PARA NAO PERDER NADA DE DICAS VALIOSAS]
+
+Contextualização e Objetivo: 
+[Forneça uma breve contextualização sobre o assunto a ser abordado no vídeo e explique o objetivo principal do conteúdo: MOSTRAR COMO FAZR, QUE PAREMOTROS SEGUIR, POR QUE FUNCIONA PELO POWERSHEL E NAO FUNCONA PELA ACTION]
+
+Preparação:
+[Descreva as etapas ou informações que o público precisa saber ou entender para se preparar para o conteúdo do vídeo: PRECISA DO PYTHON NA MAQUINA, AMB VIRTUAL É BOM, VAI SER TREINAMENTO]
+
+Passo a Passo Detalhado:
+[Detalhe os passos ou recomendações que você deseja apresentar no vídeo de forma clara e organizada: CHAMAR UM POWERSHELL, VERIFICAR SE HÁ PARAMETROS PARA COLOCAR, VERIFICAR SE ARQUIVO EXISTE ANTES DE COMEÇAR, FAZER O CODE PYTHON, REFERENCIAR O ARQUIVO, COLOCAR LOG]
+
+Dicas e Truques:
+[Forneça dicas úteis ou truques relacionados ao tema que serão compartilhados no vídeo: CANAL DO PROGRAMIZ TEM CONTEUDO BOM DE PYTHON]
+
+Conclusão:
+[Descreva como você deseja concluir o vídeo, resumindo os pontos principais abordados: ESPRO TER AJUDADO, SE QUISER MANDE DUVIDAS, PEDIR INSCRICAO E LIKE]
+
+
+Por favor, crie um roteiro para um vídeo no YouTube seguindo essa estrutura. Certifique-se de tornar o conteúdo interessante e envolvente para a audiência.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*****************para gerar thumb do video***************************
+- Faça um resumo do texto acima
+- ignore as palavras com  [exemplo]
+- esse resumo é a descricao de um video para o youtube
+- ao finalizar o resumo coloque uma linha com -----------------------------------------------------
+- gere 20 hashtags depois baseada na descricao, separado por , e nao por #

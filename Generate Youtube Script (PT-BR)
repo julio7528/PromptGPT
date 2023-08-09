@@ -1,3 +1,36 @@
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+VERSÃO 2 COM DESCRICAO MAIS CURTA E DINÂMICA
+
+Crie os Seguintes textos abaixo para um video do youtube. Considere deixar com a ortografia correta em PT-BR
+
+Título: 
+[
+- Parametros:
+   - Requisitos: Atraente, não pode ser grande
+   - Conteúdo: Executar Scripts python no power automate via powershell
+- Saída:
+    - Título do Vídeo - seguindo regras de títulos do youtube, baseada nos conteúdo e Requisitos
+*Obrigatório: Imprima Apenas o título coma estrutura: [Título: 'Descrição do título aqui']
+]
+
+Descrição: 
+[
+- Parametros:
+   - Requisitos: O Texto precisa ter o tamanho entre 30 até 200 palavras, Indtroduza uma saudação e no final peça para se inscrever. 
+   - Conteúdo da descrição:  Falar que nesse video vamos falar de power automate, primeiro vamos fazer uma execucao python e por que a action do powerr automate nao é boa, depois vamos fazer uma execucao chamando pelo powershell um script que criamos em um arquivo python separado
+- Saída:
+ - Estrutura:  Apenas a descrição com a estrutura: Saudação, Descrever sobre o que será o Vídeo e no final pedir para se inscrever 
+*Obrigatório: Imprima Apenas o título com a estrutura: [Descrição: 'Saudaçoes e sobre o que será o vídeo' (pula linha) 'Descrever sobre o que será o Vídeo' (pula linha) 'pedir para se inscrever ' ]
+]
+ 
+Tags: 
+[
+- 20 tags
+- separadas por ,
+]
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+VERSAO 1 COM DESCRICAO MAIS COMPLETA
 *****************para gerar o script***************************
 Gostaria de criar um roteiro para um vídeo no YouTube com base na estrutura fornecida abaixo:
 

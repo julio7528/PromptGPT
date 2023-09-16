@@ -1,3 +1,5 @@
+Estrutura 1 Simplificada:
+
 Matéria: [Matemática]
 Tema: [Teoria dos Conjuntos e princípio de contagem]
 Assunto:[Repreesentação de Conjuntos]
@@ -6,3 +8,19 @@ Nível de Explicação (Nível de complexidade de 1 a 10): [7]
 Tamanho de Informação (Nível do tamanho de 1 a 10): [8]
 Estrutura da Explicação: [Definição do Assunto]\n[Explicação sobre a Dúvida]\n[Exemplos na área]\n[Exemplos no mundo Real]\n[Uso prático]\n[Assuntos relacionados]\n[10 Tags]\n[Dicas de portais de educação relacionados em qualquer idioma]
 Dica de Leitura:[Indicar Livro]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Estrutura 2 Completa:
+
+Please identify the language of the text and provide an interpretation, summary and analysis, breaking it down into 5 outputs.
+Requirements: Provide a Dissertation Structure, This outputs will be used for note of college for future study.
+
+Output 1 - Topics (with subtopics if needed) - In the same Language of Text Reference.
+Output 2 - Summarize of the text  - In the same Language of Text Reference.
+Output 3 - Explanation in an easy-to-understand way in the language of the text  - In the same Language of Text Reference.
+Output 4 - Write te Text Organizating in this structure: 'Topic \n Definition \n Text  - for each Topic of Output 1 . (This Output will be Used to Create a Note External)
+Output 5 - Rewrite the text explaining in others words or explain in anoter way to understand the same text
+
+This is the text reference: 
+'The Text Here in any Language'

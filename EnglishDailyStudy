@@ -1,0 +1,82 @@
+The best tool is Gemini AI or Ms Copilot 
+
+****************STEP 1: GENERATE A TITLE OF THEME
+AI PROMPT (Paste the text bellow in your AI Service):
+-Input:
+Request for a list of 10 themes.
+Focus on common world occurrences, computing, science, astronomy, development, or historical facts.
+Request for titles suitable for developing an English Language study based on Texts.
+-Parameters:
+Themes must be diverse and relevant to English study.
+Titles should be concise and descriptive.
+Each title should represent a specific theme or topic.
+-Desired Output:
+10 separate bullet points, each containing a title.
+Titles should be related to common world occurrences, computing, science, or history.
+The list should be suitable for an English study.
+
+****************STEP 2: GENERATE A TEXT OF THEME
+AI PROMPT:
+-Input: [Title of Theme]
+-Parameter: Craft a narrative in the form of a compelling article or essay, drawing insights from literature, articles, facts, and academic reflections to explore the theme.
+-Output: A narrative text of at least 100 words that delves into the theme of the input through the structured approach of an introduction, development of the subject, and conclusion, weaving together literary analysis, scholarly insights, and personal reflections to illuminate the profound impact of narratives on individuals and societies. Show only the text and not the structure.
+
+****************STEP 2: GENERATE A TEXT OF THEME
+AI PROMPT:
+Have some Youtube video talk about this theme: [Title of Theme]
+HUMAN TODO:
+- Read an AI Summarize about the text before Watch Video (Have Several Tools for it)
+- Watch the video and Record Words you don't understand. (You will use this words in step 3 )
+
+****************STEP 3: GENERATE A VOCABULARY OF WORDS NOT CLEAR IN TEXT
+HUMAN TODO:
+Words you don't understand in text or video you use in this prompt
+AI PROMPT:
+I need a table vocabulary of these words: [Type the words here]. In these Columns: Vocabulary, Definition, Word in Portuguese, phonetic (in English to pronounce), Phrase Example (an example short phrase to make sense of the meaning of the word. Example, Cat: Cat is a feline animal)
+HUMAN TODO:
+Sent this Words to Anki and train every day.
+
+****************STEP 5: WRITE THE ENTIRE TEXT IN YOUR NATIVE LANGUAGE
+HUMAN TODO:
+Write the text translated into your language.
+
+****************STEP 5: CHECK AND REVIEW YOUR TRANSLATION WITH AI
+AI PROMPT:
+-Input: I have this text, and I made this translation into Portuguese.
+Parameter: English Text [Text Here] - [Language] translated Text [Text Translated here]
+-Output: Verify points of translation that are wrong and explain why they are incorrect and how the correct translation should be.
+Give feedback about the Translation and points of improvement.
+
+****************STEP 6: PRACTICE LISTENING AND READING
+HUMAN TODO:
+LISTEN AND THEN READ ALOUD
+
+****************STEP 7: TEXT INTERPRETATION
+AI PROMPT:
+
+Input: This is the Base Text: [Text Here]
+Output: I need 5 questions about the text to train interpretation, with 3 multiple choices of answer where one choice is true and the other 2 choices are false.
+It's an example:
+Question 1: Who discovered Brazil?
+a) Cristovan Colombo
+b) Portugal
+c) Neymar
+It is important not to reveal the answer in the question. The result board needs to be shown at the end of questions. Example:
+Answer Key:
+Question 1: b - Portugal (Because Portugal was the first country to come to the coast of South America in 1500)
+Follow this structure of Answer Key: [Question {Number}: {Letter Result} - {Answer Result} - {Explain the result}]
+
+****************STEP 8: GRAMMAR STUDY
+AI PROMPT:
+
+Input: Based on the following text:
+[Text Here]
+
+Output 1 (Named Grammar Lesson):
+Identify grammatical rules within the text and provide an explanation separated into bullet points using this structure:
+-- Definition of Grammatical Rule
+-- Explanation of the Structure of the Grammatical Rule
+-- Examples in the Text
+
+Output 2 (Named Exercise Grammar Lesson) (Displayed after Output 1):
+Grammar Exercise with Multiple Choice comprising 5 exercises with the Answer Key provided at the end, along with explanations based on the grammar rules.]
